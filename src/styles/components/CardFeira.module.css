@@ -1,0 +1,153 @@
+.linhaUm {
+  display: flex;
+  align-items: center;
+  height: 3vh;
+}
+
+.linhaDois {
+  display: flex;
+  align-items: center;
+  height: 3vh;
+}
+
+.linhaTres {
+  display: flex;
+  align-items: center;
+  height: 3vh;
+}
+
+.linhaTres section {
+  display: flex;
+  gap: 20px;
+}
+
+.divCard {
+  display: flex;
+  width: 90%;
+  height: 200px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 40px;
+}
+
+.divCard h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.divCard div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.linhaDois p {
+  color: #fa8001;
+  font-weight: 600;
+  font-size: 1.12rem;
+}
+.linhaTres p {
+  font-weight: 600;
+  font-size: 1.12rem;
+}
+
+.linhaUm p {
+  font-weight: 700;
+}
+
+.centralizar,
+.aberta,
+.fechado {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.aberta {
+  color: #72b234;
+}
+
+.fechado {
+  color: #ff3d3d;
+}
+
+@media (max-width: 768px) {
+  .divCard {
+    height: 170px;
+  }
+}
+
+@media (max-width: 670px) {
+  .divCard {
+    height: 150px;
+    padding: 15px 35px;
+  }
+  .divCard h4 {
+    font-size: 1.5em;
+  }
+  .linhaTres p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .linhaTres section {
+    gap: 10px;
+  }
+  .divCard {
+    height: 130px;
+    padding: 15px 20px;
+  }
+  .divCard h4 {
+    font-size: 1.2em;
+  }
+  .divCard p {
+    font-size: 1em;
+  }
+  .aberta,
+  .fechado {
+    font-size: 1em;
+  }
+  .linhaTres p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .divCard {
+    gap: 10px;
+    height: auto;
+  }
+  .divCard h4 {
+    font-size: 1em;
+  }
+  .divCard p {
+    font-size: 0.8em;
+  }
+  .aberta,
+  .fechado {
+    font-size: 1em;
+  }
+  .linhaTres {
+    height: auto;
+  }
+  .linhaTres section {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .divCard div {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .divCard div {
+    padding: 0px 0px;
+  }
+}

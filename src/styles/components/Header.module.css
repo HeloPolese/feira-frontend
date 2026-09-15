@@ -1,0 +1,262 @@
+.headerContainer {
+  width: 100vw;
+  background-color: #fff;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.headerConteudo {
+  display: flex;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  max-width: 940px;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+
+.headerConteudo img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: block;
+  height: 42px;
+}
+
+.headerConteudo > img{
+  margin-top: 3px;
+}
+
+.headerConteudo a {
+  user-select: none;
+  color: #000;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-shadow: 0px -2px 0 white, 0px -1px 0 white, 0px 0px 0 white,
+    2px -2px 0 white, 2px -1px 0 white, 2px 0px 0 white, -2px -2px 0 white,
+    -2px -1px 0 white, -2px 0px 0 white, 1px -2px 0 white, 1px -1px 0 white,
+    1px 0px 0 white, -1px -2px 0 white, -1px -1px 0 white, -1px 0px 0 white,
+    0px -2px 0 white, 0px -1px 0 white, 0px 0px 0 white;
+  box-shadow: 0 -1px 0 0 white inset, 0 -2px 0 0 transparent inset;
+  transition: all 0.3s ease-in;
+}
+
+.divCarrinho{
+  width: 10%;
+  margin-bottom: 1px;
+}
+
+.precoCarrinho {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #72b234;
+}
+
+.precoCarrinho span {
+  font-size: 0.6rem;
+}
+
+.headerConteudo a:hover {
+  transition: all 0.3s ease-out;
+  box-shadow: 0 -1px 0 0 white inset, 0 -2px 0 0 #72b234 inset;
+}
+
+.headerConteudo .icone:hover{
+  box-shadow: none;
+}
+
+.headerConteudo a::selection {
+  color: white;
+  background: black;
+  text-shadow: none;
+}
+
+.selectProdutores {
+  user-select: none;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #000;
+  margin-top: 5px;
+  padding-right: 20px;
+  background: url("../../../public/setinha-verde.png") no-repeat #fff;
+  background-position: right center;
+  background-size: 15px;
+  position: relative;
+  display: flex;
+  margin-right: 5px;
+}
+
+.menuProdutores {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: -20%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 140%;
+}
+
+.menuProdutores div {
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+  border: 1px solid #72b234;
+  border-top: none;
+  padding: 10px;
+  letter-spacing: normal;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.fotoProdutor {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.ativo {
+  background-color: #72b23433;
+}
+
+.slideintop {
+  -webkit-animation: slideintop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slideintop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes slideintop {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideintop {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .menuProdutores div:hover {
+    background-color: #72b23433;
+  }
+}
+
+@media (max-width: 1024px) {
+  .headerConteudo {
+    padding: 0 20px;
+  }
+  .divCarrinho{
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerConteudo {
+    flex-wrap: wrap;
+  }
+  .divCarrinho{
+    width: 100px;
+  }
+}
+
+@media (max-width: 450px) {
+  .headerConteudo {
+    padding: 0 10px;
+  }
+  .headerConteudo img {
+    height: 30px;
+  }
+  .fotoProdutor {
+    width: 30px;
+    height: 30px;
+  }
+  .iconeCarrinho{
+    width: 20px;
+  }
+  .selectProdutores {
+    background-size: 10px;
+    padding-right: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .headerConteudo img{
+    height: 26px;
+  }
+  .headerConteudo {
+    padding: 0 5px;
+  }
+  .headerConteudo img {
+    height: 30px;
+  }
+  .headerConteudo a,
+  .selectProdutores {
+    font-size: 0.8rem;
+  }
+  .iconeCarrinho{
+    width: 19px;
+  }
+  .precoCarrinho {
+    font-size: 0.7rem;
+  }
+  .precoCarrinho span {
+    font-size: 0.6rem;
+  }
+  .selectProdutores {
+    background-size: 10px;
+    padding-right: 12px;
+  }
+}
+
+@media (max-width: 350px) {
+  .headerConteudo img{
+    height: 25px;
+  }
+  .headerConteudo {
+    padding: 0 5px;
+  }
+  .headerConteudo a {
+    font-size: 0.7rem;
+  }
+  .iconeCarrinho{
+    width: 16px;
+  }
+  .divCarrinho{
+    width: 80px;
+  }
+  .selectProdutores {
+    font-size: 0.7rem;
+    background-size: 8px;
+    padding-right: 10px;
+  }
+}
