@@ -1,0 +1,190 @@
+.banner {
+  width: 100vw;
+  max-width: 940px;
+  height: 250px;
+  background: url("../../../public/banner.png") no-repeat center center;
+  background-size: cover;
+  margin: 30px auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 30px;
+  color: white;
+  gap: 15px;
+}
+
+.banner a{
+  text-decoration: none;
+}
+
+.banner h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.banner p {
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 45%;
+}
+
+.categoriaDiv {
+  width: 100vw;
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.categoriaDiv h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #72b234;
+}
+
+.categorias {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.produtosDiv {
+  margin-top: 15px;
+  background-color: #f5f5f5;
+  min-height: 30vh;
+}
+
+.produtosSection {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.produtosSection h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #72b234;
+  margin-top: 15px;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  row-gap: 30px;
+  justify-items: center;
+}
+
+.nenhumProdutoMsg {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fa8001;
+  text-align: center;
+  gap: 10px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .produtos {
+    gap: 20px;
+  }
+  .banner {
+    margin-top: 120px;
+    height: 200px;
+    margin-bottom: 15px;
+  }
+  .banner p {
+    width: 60%;
+    font-size: 1rem;
+  }
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+  .categoriaDiv {
+    gap: 10px;
+  }
+  .categoriaDiv h2 {
+    font-size: 1.3rem;
+  }
+  .produtosSection h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .banner {
+    height: 180px;
+    padding-left: 15px;
+  }
+  .banner p {
+    width: 75%;
+    font-size: 0.9rem;
+  }
+  .banner h1 {
+    font-size: 1.3rem;
+  }
+  .categorias {
+    overflow-x: auto;
+    gap: 20px;
+    padding: 0 15px;
+  }
+  .produtos {
+    grid-template-columns: 1fr 1fr;
+  }
+  .nenhumProdutoMsg {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .banner {
+    margin-top: 110px;
+    gap: 10px;
+  }
+  .nenhumProdutoMsg {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .categoriaDiv h2 {
+    font-size: 1.1rem;
+  }
+  .produtosSection h2 {
+    font-size: 1.1rem;
+  }
+  .banner {
+    margin-top: 100px;
+    height: 150px;
+  }
+  .banner p {
+    width: 75%;
+    font-size: 0.7rem;
+  }
+  .banner h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .categorias {
+    gap: 10px;
+  }
+  .nenhumProdutoMsg {
+    font-size: 0.6rem;
+  }
+}
